@@ -156,7 +156,18 @@ a:hover{ color: var(--link2); }
 .meta{
   color: var(--muted);
   font-size: 13px;
-  white-space: nowrap;
+  white-space: normal;          /* allow wrapping */
+  overflow-wrap: anywhere;      /* break long words/terms if needed */
+}
+
+.tag{
+  color: var(--muted);
+  font-size: 13px;
+  white-space: nowrap;          /* keep PDF label on one line */
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: rgba(255,255,255,0.03);
 }
 
 /* ---------- Resume iframe ---------- */
