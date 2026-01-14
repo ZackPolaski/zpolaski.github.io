@@ -24,6 +24,18 @@ body{
   line-height: 1.55;
 }
 
+/* ---------- Overflow safety ---------- */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 /* ---------- Layout ---------- */
 .container{
   max-width: var(--maxw);
