@@ -2,30 +2,72 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quant Notes – Zachary Polaski</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Quant Finance Notes</h1>
 
-  <p>
-    Personal refresher notes on quantitative finance topics.
-    These are written primarily for my own reference, but may
-    be useful to others working in derivatives, hedging, and risk.
-  </p>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">Zachary Polaski</a>
+      <div class="nav">
+        <a href="resume.html">Resume</a>
+        <a href="notes.html">Quant Notes</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
 
-  <ul>
-    <li>
-      <a href="notes/volatility-surfaces.pdf" target="_blank">
-        Arbitrage-Free Volatility Surfaces (SVI / SSVI)
-      </a>
-    </li>
-    <li>
-      <a href="notes/vm21-capital.pdf" target="_blank">
-        VM-21 Capital, Hedge Decay, and Convexity
-      </a>
-    </li>
-  </ul>
+  <div class="container">
+    <h1>Quant notes</h1>
+    <p>
+      PDF-first note packets. Written primarily for my own refreshers, shared in case others find them useful.
+      (No client material; all content is general and self-contained.)
+    </p>
 
-  <p><a href="index.html">← Back</a></p>
+    <div class="card">
+      <h2>Library</h2>
+      <ul class="list">
+        <li class="item" style="flex-direction: column; align-items: flex-start;">
+          <div>
+            <a href="notes/Ito_Integration_Notes.pdf">
+              Primer on Ito Calculus
+            </a>
+          </div>
+        
+          <div class="meta" style="margin-top:6px;">
+            This is more at the level of a motivation for Ito's calculus - why do we even need it?
+          </div>
+        </li>
+        <li class="item" style="flex-direction: column; align-items: flex-start;">
+          <div>
+            <a href="notes/RILA_FIA_Handbook.pdf">
+              Primer on NAIC for Hedgers
+            </a>
+          </div>
+        
+          <div class="meta" style="margin-top:6px;">
+            This needs to be made more end-to-end coherent in the future, but is still information rich with my experience in this area.
+          </div>
+        </li>
+        <li class="item" style="flex-direction: column; align-items: flex-start;">
+          <div>
+            <a href="notes/SSVIPaper_Final.pdf">
+              Exploring an SSVI Extension
+            </a>
+          </div>
+        
+          <div class="meta" style="margin-top:6px;">
+            An interesting SSVI idea I had for a grad class project. It does not work (as paper's results show), but I included some great refreshers on arbitrage, vol surfaces, Black-Scholes, etc. that I find useful.
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      Want topics? I’ll be gradually publishing refreshers on everything Quant.
+    </div>
+  </div>
 </body>
 </html>

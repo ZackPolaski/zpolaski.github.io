@@ -2,23 +2,36 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume – Zachary Polaski</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Resume</h1>
 
-  <p>
-    <a href="assets/Zachary_Polaski_Resume.pdf" target="_blank">
-      Download PDF
-    </a>
-  </p>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">Zachary Polaski</a>
+      <div class="nav">
+        <a href="resume.html">Resume</a>
+        <a href="notes.html">Quant Notes</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
 
-  <iframe
-    src="assets/Zachary_Polaski_Resume.pdf"
-    width="100%"
-    height="900px">
-  </iframe>
+  <div class="container">
+    <h1>Resume</h1>
 
-  <p><a href="index.html">← Back</a></p>
+    <div class="card">
+      <p>
+        <a href="assets/Zachary_Polaski_Resume.pdf" target="_blank">Download PDF</a>
+      </p>
+      <iframe class="pdf" src="assets/Zachary_Polaski_Resume.pdf"></iframe>
+    </div>
+
+    <div class="footer">
+      Tip: link this page directly in recruiter outreach.
+    </div>
+  </div>
 </body>
 </html>

@@ -2,19 +2,63 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zachary Polaski</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Zachary Polaski</h1>
-  <p>
-    Quantitative systems architect specializing in derivatives pricing,
-    hedging, and regulatory capital for insurance and structured products.
-  </p>
 
-  <ul>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="notes.html">Quant Notes</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">Zachary Polaski</a>
+      <div class="nav">
+        <a href="resume.html">Resume</a>
+        <a href="notes.html">Quant Notes</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Quant systems architect in derivatives, hedging, and capital</h1>
+    <p>
+      I build and operate production-grade pricing, volatility, and risk platforms for
+      equity-linked insurance and structured products (FIA/RILA/defined-outcome).
+    </p>
+
+    <div class="card">
+      <h2>Focus</h2>
+      <div class="badges">
+        <span class="badge">Arbitrage-free vol surfaces (SVI/SSVI)</span>
+        <span class="badge">Stoch vol (Heston)</span>
+        <span class="badge">Rates (Hull–White, G2++)</span>
+        <span class="badge">Dynamic hedging & Greeks</span>
+        <span class="badge">VM-21 / AG-54 / GPVAD</span>
+        <span class="badge">18f-4 Program VaR</span>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Resume</h2>
+        <p>One-page CV + PDF download.</p>
+        <p><a href="resume.html">View resume →</a></p>
+      </div>
+
+      <div class="card">
+        <h2>Quant notes</h2>
+        <p>Technical note packets (PDF-first). Topics mirror real interview themes.</p>
+        <p><a href="notes.html">Browse notes →</a></p>
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="y"></span> Zachary Polaski · Built with GitHub Pages
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
