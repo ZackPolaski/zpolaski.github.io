@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quant Notes – Zachary Polaski</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Notes – Zachary Polaski</title>
+  <link rel="stylesheet" href="styles.css?v=1">
 </head>
 <body>
 
@@ -13,14 +13,14 @@
       <a class="brand" href="index.html">Zachary Polaski</a>
       <div class="nav">
         <a href="resume.html">Resume</a>
-        <a href="notes.html">Quant Notes</a>
+        <a href="notes.html">Notes</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
   </div>
 
   <div class="container">
-    <h1>Quant notes</h1>
+    <h1>Notes</h1>
     <p>
       Written primarily for my own refreshers, shared in case others find them useful.
       (No client material; all content is general and self-contained.)
@@ -28,43 +28,136 @@
 
     <div class="card">
       <h2>Library</h2>
+
+      <!-- Quick jump links -->
+      <div class="badges" style="margin-top:10px;">
+        <a class="badge" href="#quant-finance" style="text-decoration:none;">Quant Finance</a>
+        <a class="badge" href="#comp-sci" style="text-decoration:none;">Comp Sci</a>
+      </div>
+
+      <!-- =========================
+           Quant Finance
+           ========================= -->
+      <h2 id="quant-finance" style="margin-top:18px;">Quant Finance</h2>
       <ul class="list">
 
         <li class="item note-item">
           <div class="note-head">
-            <a href="notes/Ito_Integration_Notes.pdf">Primer on Ito Calculus</a>
+            <a href="notes/Ito_Integration_Notes.pdf" target="_blank">Primer on Itô Calculus</a>
             <span class="tag">PDF</span>
           </div>
           <div class="note-desc">
-            This is more at the level of a motivation for Ito's calculus - why do we even need it?
+            Motivation-first refresher: why classical calculus breaks for Brownian motion, what “non-smooth paths”
+            really implies, and how Itô’s lemma links directly to hedging and pricing.
           </div>
         </li>
 
         <li class="item note-item">
           <div class="note-head">
-            <a href="notes/RILA_FIA_Handbook.pdf">Primer on NAIC for Hedgers</a>
+            <a href="notes/RILA_FIA_Handbook.pdf" target="_blank">Primer on NAIC for Hedgers</a>
             <span class="tag">PDF</span>
           </div>
           <div class="note-desc">
-            This needs to be made more end-to-end coherent in the future, but is still information rich with my experience in this area.
+            Practitioner overview of VM-21 / AG-54 style mechanics and how capital, hedging rules, and scenario frameworks
+            interact for equity-linked insurance books. (Currently a bit “notesy” and lacks flow, but information-dense.)
           </div>
         </li>
+
+        <li class="item note-item">
+          <div class="note-head">
+            <a href="notes/SSVIPaper_Final.pdf" target="_blank">Exploring an SSVI Extension</a>
+            <span class="tag">PDF</span>
+          </div>
+          <div class="note-desc">
+            A grad-project exploration of an SSVI idea (ultimately not successful - see results), but includes refreshers on smile arbitrage,
+            surface construction, and hedge-consistent pricing (Black–Scholes, vol surfaces, and related foundations).
+          </div>
+        </li>
+
+        <li class="item note-item">
+          <div class="note-head">
+            <a href="notes/AlphabetPaper.pdf" target="_blank">Exploring Alphabetic Bias in Value Stocks</a>
+            <span class="tag">PDF</span>
+          </div>
+          <div class="note-desc">
+            Another grad-project idea inspired by my own experience using stock screeners.
+          </div>
+        </li>
+
+        <li class="item note-item">
+          <div class="note-head">
+            <a href="notes/ThesisFinal.pdf" target="_blank">Option Implied Asset Allocation Using Levy Processes</a>
+            <span class="tag">PDF</span>
+          </div>
+          <div class="note-desc">
+            My Master's thesis. There are numerous methodological issues I could not recognize at the time (blame no practicing experience at the time..), however this has good refreshers on topics like Levy processes and Fourier pricing.
+          </div>
+        </li>
+
+        <li class="item note-item">
+          <div class="note-head">
+            <a href="notes/SOFRBootstrapping.pdf" target="_blank">SOFR-based Risk Free Curve Bootstrapping</a>
+            <span class="tag">PDF</span>
+          </div>
+          <div class="note-desc">
+            Refresher on risk-free curve bootstrapping. A good review of how simple the process has become now that the dual-curve complexity has passed with the LIBOR transition passed and SOFR are liquid for many terms. 
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- =========================
+           Comp Sci
+           ========================= -->
+      <h2 id="comp-sci" style="margin-top:22px;">Comp Sci</h2>
+      <ul class="list">
         
         <li class="item note-item">
           <div class="note-head">
-            <a href="notes/SSVIPaper_Final.pdf">Exploring an SSVI Extension</a>
+            <a href="notes/CSharp_DataStructures.pdf" target="_blank">Applied Data Structure in C#</a>
             <span class="tag">PDF</span>
           </div>
           <div class="note-desc">
-            An interesting SSVI idea I had for a grad class project. It does not work (as the paper’s results show), but I included refreshers on arbitrage, vol surfaces, Black–Scholes, etc. that I still find useful.
+            Primer on what actually happens under the hood for various popular (at least in my experience) data structures and containers.
+          </div>
+        </li>
+
+        <li class="item note-item">
+          <div class="note-head">
+            <a href="notes/OOADPrinciples.pdf" target="_blank">Object Oriented Design Principles and Practice</a>
+            <span class="tag">PDF</span>
+          </div>
+          <div class="note-desc">
+            A huge review of a three-part grad class I took on OOAD. Nothing original here and this rips so much off from GOF, but I wanted to get everything in one place to create a useful master reference.
+          </div>
+        </li>
+
+        <li class="item note-item">
+          <div class="note-head">
+            <a href="notes/NetworkSystemFoundations.pdf" target="_blank">Network Systems Foundations</a>
+            <span class="tag">PDF</span>
+          </div>
+          <div class="note-desc">
+            Another review inspired by a grad class. A great review/primer to answer the question "how does my computer actually even talk to the outside world?". Also see the short companion notes on cyclic redundancy checks below.
+          </div>
+        </li>
+
+        <li class="item note-item">
+          <div class="note-head">
+            <a href="notes/CyclicRedundancyChecks.pdf" target="_blank">Cyclic Redundancy Checks</a>
+            <span class="tag">PDF</span>
+          </div>
+          <div class="note-desc">
+            A small companion note to the Network Systems Foundations primer.
           </div>
         </li>
         
       </ul>
+
     </div>
 
     <div class="footer">
-      Want topics? I’ll be gradually publishing refreshers on everything Quant.
+      I’ll gradually publish refreshers across quant finance, hedging/capital mechanics, and adjacent technical topics.
     </div>
   </div>
 </body>
